@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/tolol"
+        android:layout_margin="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:orientation="horizontal"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/label_celcius"
+            android:text="Celcius" />
+
+        <EditText
+            android:id="@+id/txt_celcius"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Suhu Dalam Celcius"  />
+
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:text="Convert"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tolol" />
+
+
+    <GridLayout
+        android:id="@+id/kumpulan_txt"
+        android:layout_margin="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_convert"
+        android:orientation="horizontal"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/label_kelvin"
+            android:text="Kelvin" />
+
+        <EditText
+            android:id="@+id/txt_kelvin"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Hasil Kelvin"  />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/label_fahrenheit"
+            android:text="Fahrenheit" />
+
+        <EditText
+            android:id="@+id/txt_fahrenheit"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Hasil Fahrenheit"  />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/label_reamur"
+            android:text="Reamur" />
+
+        <EditText
+            android:id="@+id/txt_reamur"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Hasil Reamur" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
